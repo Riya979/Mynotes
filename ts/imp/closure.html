@@ -1,0 +1,17 @@
+<script>
+    
+    function outer(){
+            let outervariable = "Hii";
+            //inner is closure bcz it closes over outer variable
+            function inner(){
+              
+                console.log(outervariable);
+                //access from outerscope
+               
+            }
+             return inner();
+        }
+        outer();//still has access to outervariable even though it is closed i.e closure
+        
+        
+    </script>

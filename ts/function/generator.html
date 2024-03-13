@@ -1,0 +1,13 @@
+<script>
+    function* ice(){
+        yield "first"
+        yield "second"
+        yield "third"
+    }
+    let priya=ice()
+    console.log("priya",priya.next())
+    console.log("priya",priya.next())
+    console.log("priya",priya.next())
+    console.log("priya",priya.next())
+    console.log("p1",ice().next())
+</script>

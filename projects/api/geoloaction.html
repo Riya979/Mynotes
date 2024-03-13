@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+   <center>
+    <style>
+        #map{
+            height:400px;
+            width:400px;
+            border-radius: 50%;
+            border: 10%;
+            align-items: center;
+        }
+        h1{
+            color:brown;
+            border-radius: 10%;
+            border: 10%;
+            flex-direction: column;
+        }
+    </style>
+
+   
+   <body>
+<div id="map"></div>
+<ul><h1>MY LIVE LOCATION</h1></ul>
+<script>
+    navigator.geolocation.getCurrentPosition((position)=>{
+        let{latitude,longitude}=position.coords;
+        var map=L.map('map').setView([latitude,longitude],19);
+        L.tileLayer('',{
+            maxZoom:19,
+            minZoom:1,
+            attrbution:'&copy;<a href="">OpenStreetMap</a>'
+        }).addTo(map);
+        L.mark([latitude,longitude]).addTo(map);
+    })
+</script>
+</center>
+   </body>
+
+</html>

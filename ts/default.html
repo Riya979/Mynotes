@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <input type="text" placeholder="" name="" value="priya" id="1">
+    <button onclick="Capture()">click</button><br>
+    <input type="text" placeholder="" name="" value="priya" id="2">
+    <button onclick="Capture1()">click</button><br>
+    <input type="password" placeholder="" name="" value="0987654321" id="3">
+    <button onclick="Capture2()">click</button>
+    <script>
+        function Capture(){
+            let root=document.getElementById('root')
+            let data=document.getElementById('1')
+            root.innerHTML=` hi ${data.value}`
+            console.log(data.value)
+        }
+        function Capture1(){
+            let root=document.getElementById('root')
+            let data1=document.getElementById('2')
+            root.innerHTML=` hi ${data1.value}`
+            console.log(data1.value)
+        }
+        function Capture2(){
+            let root=document.getElementById('root')
+            let data2=document.getElementById('3')
+            root.innerHTML=` hi ${data2.value}`
+            console.log(data2.value)
+        }
+    </script>
+</body>
+</html>

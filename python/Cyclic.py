@@ -1,0 +1,9 @@
+class A:
+    def m1(self):
+        print('Im a')
+class B(A):
+    def m2(self):
+        print('Im b')
+class C(B):
+    def m3(self):
+        print('Im c')

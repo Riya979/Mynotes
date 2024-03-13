@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root"></div>
+    <script>
+        
+        let item1={
+           title: "Mens Casual Slim Fit",
+            price: 15.99,
+            description: "The color could be slightly different between on the screen and in practice.",
+           img: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+            
+        }
+       let item2={ 
+        title: "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+        price: 109,
+        description: "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+      
+        img: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+        }
+        let a=[item1,item2]
+                let root=document.getElementById('root')
+    
+                a.map((item)=>{
+                    let img=document.createElement('img')
+                    img.style.height="200px"
+                    img.src=item.img
+                    root.appendChild(img)
+                })
+    
+    </script>
+</body>
+</html>

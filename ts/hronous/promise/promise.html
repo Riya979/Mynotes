@@ -1,0 +1,18 @@
+
+<script>
+var p=new Promise(function(a,b){
+    var result=true;
+    if(result)
+    {
+        a("true")
+    }
+    else
+    {
+        b("false")
+    }
+})
+console.log(p)
+p.then((value)=>console.log(value))
+// p.catch(function(value){console.log(value);})
+// (console.log("this"))
+</script>

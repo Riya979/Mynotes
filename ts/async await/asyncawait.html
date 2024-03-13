@@ -1,0 +1,12 @@
+<script>
+    async function Marraige(){
+      let Marraige=new Promise((x,y)=>{
+        setTimeout(()=>{x("hello")},5000)
+      })
+      console.log(await Marraige)
+
+    }
+    
+    Marraige()
+
+</script>

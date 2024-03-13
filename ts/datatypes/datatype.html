@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"> </div>
+        <input type="text" name="" placeholder="Name" value="priya" id="1">
+        <button onClick="Capture1()">click</button><br>
+        <input type="email" name="" placeholder="Name" value="priyanka@gmail.com" id="2"> 
+        <button onClick="Capture2()">click</button><br>
+        <input type="date" name="" placeholder="Name" value="17.1.2024" id="3">
+        <button onClick="Capture3()">click</button><br>
+        <input type="password" name="" placeholder="Name" value="0987654321" id="4">
+        <button onClick="Capture4()">click</button><br>
+   
+    <script>
+        function Capture1(){
+            let data=document.getElementById('root')
+            let data1=document.getElementById('1')
+            data.innerHTML = `HII ${data1.value}`
+            console.log(data1.value)
+        }
+            function Capture2(){
+            let data=document.getElementById('root')
+            let data2=document.getElementById('2')
+            data.innerHTML = `HII ${data2.value}`
+            console.log(data2.value)
+        }
+            function Capture3(){
+            let data=document.getElementById('root')
+            let data3=document.getElementById('3')
+            data.innerHTML = `HII ${data3.value}`
+            console.log(data3.value)}
+
+            function Capture4(){
+            let data=document.getElementById('root')
+            let data4=document.getElementById('4')
+            data.innerHTML = `HII ${data4.value}`
+            console.log(data4.value)
+            }
+            
+            
+
+        
+
+    </script>
+</body>
+</html>
